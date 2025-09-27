@@ -4,6 +4,7 @@ services:
     env: static
     buildCommand: npm run build
     staticPublishPath: ./dist
+    rootDir: .
     headers:
       - path: /*
         name: X-Frame-Options

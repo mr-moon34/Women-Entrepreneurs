@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Mail, Lock, Eye, EyeOff, Users, ShoppingCart, Shield, User, Phone } from 'lucide-react';
 import { useApp } from '../../context/AppContext';
 import { User as UserType } from '../../types';
+import logo from '../../assets/logo.png';
 
 interface SignupScreenProps {
   onSwitchToLogin: () => void;
@@ -84,7 +85,7 @@ export default function SignupScreen({ onSwitchToLogin }: SignupScreenProps) {
         <div className="text-center mb-6">
           <div className="bg-emerald-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
             <img
-              src="/logo.png"
+              src={logo}
               alt="Women's Co-Op Logo"
               className="h-10 w-10 object-contain"
             />

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Menu, X, Globe, User, ShoppingCart, Bell, Search, MessageCircle } from 'lucide-react';
 import { useApp } from '../../context/AppContext';
+import logo from '../../assets/logo.png';
 
 interface HeaderProps {
   onSearchClick?: () => void;
@@ -30,7 +31,7 @@ export default function Header({ onSearchClick, onChatClick, onNotificationsClic
               className="flex-shrink-0 flex items-center space-x-3 hover:opacity-80 transition-opacity"
             >
               <img
-                src="/logo.png"
+                src={logo}
                 alt="Women's Co-Op Logo"
                 className="h-8 w-8 object-contain"
               />

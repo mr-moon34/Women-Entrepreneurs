@@ -21,6 +21,7 @@ import SearchFilter from './components/Common/SearchFilter';
 import Chat from './components/Common/Chat';
 import Notifications from './components/Common/Notifications';
 import { mockProducts } from './context/AppContext';
+import logo from './assets/logo.png';
 
 // Splash Screen Component
 function SplashScreen() {
@@ -29,7 +30,7 @@ function SplashScreen() {
       <div className="text-center text-white">
         <div className="bg-white/20 backdrop-blur-sm w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
           <img
-            src="/logo.png"
+            src={logo}
             alt="Women's Co-Op Logo"
             className="h-16 w-16 object-contain"
           />
